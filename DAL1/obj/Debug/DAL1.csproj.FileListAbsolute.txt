@@ -1,0 +1,5 @@
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\bin\Debug\DAL1.dll
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\bin\Debug\DAL1.pdb
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\obj\Debug\DAL1.csproj.CoreCompileInputs.cache
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\obj\Debug\DAL1.dll
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\obj\Debug\DAL1.pdb

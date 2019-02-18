@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlueVikings2019Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="document">
+    <Key>
+      <PropertyRef Name="documentId" />
+    </Key>
+    <Property Name="documentId" Type="Int32" Nullable="false" />
+    <Property Name="doc" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="words" Relationship="Self.word_document" FromRole="documents" ToRole="words" />
+  </EntityType>
+  <EntityType Name="word">
+    <Key>
+      <PropertyRef Name="wordId" />
+    </Key>
+    <Property Name="wordId" Type="Int32" Nullable="false" />
+    <Property Name="word1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="documents" Relationship="Self.word_document" FromRole="words" ToRole="documents" />
+  </EntityType>
+  <Association Name="word_document">
+    <End Role="documents" Type="Self.document" Multiplicity="*" />
+    <End Role="words" Type="Self.word" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="BlueVikings2019Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="documents" EntityType="Self.document" />
+    <EntitySet Name="words" EntityType="Self.word" />
+    <AssociationSet Name="word_document" Association="Self.word_document">
+      <End Role="documents" EntitySet="documents" />
+      <End Role="words" EntitySet="words" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

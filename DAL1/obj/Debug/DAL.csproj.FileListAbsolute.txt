@@ -1,0 +1,12 @@
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\bin\Debug\DAL1.dll
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\bin\Debug\DAL1.pdb
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\obj\Debug\DAL1.dll
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\obj\Debug\DAL1.pdb
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\bin\Debug\DAL1.dll.config
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\bin\Debug\EntityFramework.dll
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\bin\Debug\EntityFramework.xml
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jespe\source\repos\InvertedIndex\DAL1\obj\Debug\DAL.csproj.CopyComplete

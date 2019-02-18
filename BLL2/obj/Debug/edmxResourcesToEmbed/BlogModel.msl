@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlueVikings2019ModelStoreContainer" CdmEntityContainer="BlueVikings2019Entities">
+    <EntitySetMapping Name="documents">
+      <EntityTypeMapping TypeName="BlueVikings2019Model.document">
+        <MappingFragment StoreEntitySet="documents">
+          <ScalarProperty Name="documentId" ColumnName="documentId" />
+          <ScalarProperty Name="doc" ColumnName="doc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="words">
+      <EntityTypeMapping TypeName="BlueVikings2019Model.word">
+        <MappingFragment StoreEntitySet="words">
+          <ScalarProperty Name="wordId" ColumnName="wordId" />
+          <ScalarProperty Name="word1" ColumnName="word" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="word_document" TypeName="BlueVikings2019Model.word_document" StoreEntitySet="word_document">
+      <EndProperty Name="documents">
+        <ScalarProperty Name="documentId" ColumnName="fileId" />
+      </EndProperty>
+      <EndProperty Name="words">
+        <ScalarProperty Name="wordId" ColumnName="termId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

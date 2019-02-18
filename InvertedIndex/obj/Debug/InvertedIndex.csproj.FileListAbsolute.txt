@@ -1,0 +1,7 @@
+C:\Users\Jespe\source\repos\InvertedIndex\InvertedIndex\bin\Debug\InvertedIndex.exe.config
+C:\Users\Jespe\source\repos\InvertedIndex\InvertedIndex\bin\Debug\InvertedIndex.exe
+C:\Users\Jespe\source\repos\InvertedIndex\InvertedIndex\bin\Debug\InvertedIndex.pdb
+C:\Users\Jespe\source\repos\InvertedIndex\InvertedIndex\obj\Debug\InvertedIndex.csprojAssemblyReference.cache
+C:\Users\Jespe\source\repos\InvertedIndex\InvertedIndex\obj\Debug\InvertedIndex.csproj.CoreCompileInputs.cache
+C:\Users\Jespe\source\repos\InvertedIndex\InvertedIndex\obj\Debug\InvertedIndex.exe
+C:\Users\Jespe\source\repos\InvertedIndex\InvertedIndex\obj\Debug\InvertedIndex.pdb

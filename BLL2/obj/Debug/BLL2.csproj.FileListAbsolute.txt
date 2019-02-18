@@ -1,0 +1,10 @@
+C:\Users\Jespe\source\repos\InvertedIndex\BLL2\obj\Debug\BLL2.csprojAssemblyReference.cache
+C:\Users\Jespe\source\repos\InvertedIndex\BLL2\obj\Debug\BLL2.csproj.CoreCompileInputs.cache
+C:\Users\Jespe\source\repos\InvertedIndex\BLL2\bin\Debug\BLL2.exe.config
+C:\Users\Jespe\source\repos\InvertedIndex\BLL2\bin\Debug\BLL2.exe
+C:\Users\Jespe\source\repos\InvertedIndex\BLL2\bin\Debug\BLL2.pdb
+C:\Users\Jespe\source\repos\InvertedIndex\BLL2\bin\Debug\DAL1.dll
+C:\Users\Jespe\source\repos\InvertedIndex\BLL2\bin\Debug\DAL1.pdb
+C:\Users\Jespe\source\repos\InvertedIndex\BLL2\obj\Debug\BLL2.csproj.CopyComplete
+C:\Users\Jespe\source\repos\InvertedIndex\BLL2\obj\Debug\BLL2.exe
+C:\Users\Jespe\source\repos\InvertedIndex\BLL2\obj\Debug\BLL2.pdb
