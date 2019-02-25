@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlueVikings2019Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="DocumentId" />
+    </Key>
+    <Property Name="DocumentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Term" Relationship="BlueVikings2019Model.TermDocument" FromRole="Document" ToRole="Term" />
+  </EntityType>
+  <EntityType Name="Term">
+    <Key>
+      <PropertyRef Name="WordId" />
+    </Key>
+    <Property Name="WordId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Documents" Relationship="BlueVikings2019Model.TermDocument" FromRole="Term" ToRole="Document" />
+  </EntityType>
+  <EntityContainer Name="BlueVikings2019Entit" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Documents" EntityType="Self.Document" />
+    <EntitySet Name="Terms" EntityType="Self.Term" />
+    <AssociationSet Name="TermDocument" Association="BlueVikings2019Model.TermDocument">
+      <End Role="Term" EntitySet="Terms" />
+      <End Role="Document" EntitySet="Documents" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="TermDocument">
+    <End Type="BlueVikings2019Model.Term" Role="Term" Multiplicity="*" />
+    <End Type="BlueVikings2019Model.Document" Role="Document" Multiplicity="*" />
+  </Association>
+</Schema>

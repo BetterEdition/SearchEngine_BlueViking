@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="documentId" />
     </Key>
-    <Property Name="documentId" Type="Int32" Nullable="false" />
+    <Property Name="documentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="doc" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="words" Relationship="Self.word_document" FromRole="documents" ToRole="words" />
   </EntityType>
@@ -12,7 +12,7 @@
     <Key>
       <PropertyRef Name="wordId" />
     </Key>
-    <Property Name="wordId" Type="Int32" Nullable="false" />
+    <Property Name="wordId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="word1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="documents" Relationship="Self.word_document" FromRole="words" ToRole="documents" />
   </EntityType>

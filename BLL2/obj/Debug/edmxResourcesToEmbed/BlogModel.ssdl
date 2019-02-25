@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="documentId" />
     </Key>
-    <Property Name="documentId" Type="int" Nullable="false" />
+    <Property Name="documentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="doc" Type="nvarchar" MaxLength="30" />
   </EntityType>
   <EntityType Name="word_document">
@@ -19,7 +19,7 @@
     <Key>
       <PropertyRef Name="wordId" />
     </Key>
-    <Property Name="wordId" Type="int" Nullable="false" />
+    <Property Name="wordId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="word" Type="nvarchar" MaxLength="30" />
   </EntityType>
   <Association Name="FK_word_document_documents">

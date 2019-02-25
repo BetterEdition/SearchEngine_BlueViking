@@ -24,10 +24,13 @@ namespace BLL
 
 
                 List<string> content = System.IO.File.ReadAllText(file).Split(' ').Distinct().ToList();
+                List<string> removedSpaceContent = cleanWord.noSpacingNorSpecialChar(content);
                 
-                addToIndex(content, file.Replace("C:\\Users\\Jespe\\Desktop\\DocumentsforIndex\\", ""));
-
                 
+                addToIndex(removedSpaceContent, file.Replace("C:\\Users\\Jespe\\Desktop\\DocumentsforIndex\\", ""));
+                
+                
+                Console.ReadLine();
             }
             
             return invertedIndex;

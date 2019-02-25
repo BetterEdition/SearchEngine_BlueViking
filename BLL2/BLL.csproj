@@ -52,41 +52,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BlogModel.Context.cs">
+    <Compile Include="cleanWord.cs" />
+    <Compile Include="Datamodel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BlogModel.Context.tt</DependentUpon>
+      <DependentUpon>Datamodel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="BlogModel.cs">
+    <Compile Include="Datamodel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BlogModel.tt</DependentUpon>
+      <DependentUpon>Datamodel.tt</DependentUpon>
     </Compile>
-    <Compile Include="BlogModel.Designer.cs">
+    <Compile Include="Datamodel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BlogModel.edmx</DependentUpon>
+      <DependentUpon>Datamodel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="document.cs">
-      <DependentUpon>BlogModel.tt</DependentUpon>
+    <Compile Include="Document.cs">
+      <DependentUpon>Datamodel.tt</DependentUpon>
     </Compile>
     <Compile Include="PreProcessing.cs" />
     <Compile Include="DataInsertion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="word.cs">
-      <DependentUpon>BlogModel.tt</DependentUpon>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Datamodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>Datamodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Datamodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Term.cs">
+      <DependentUpon>Datamodel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="BlogModel.edmx">
+    <EntityDeploy Include="Datamodel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BlogModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Datamodel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="BlogModel.edmx.diagram">
-      <DependentUpon>BlogModel.edmx</DependentUpon>
+    <None Include="Datamodel.edmx.diagram">
+      <DependentUpon>Datamodel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL1\DAL.csproj">
@@ -95,19 +114,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BlogModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BlogModel.edmx</DependentUpon>
-      <LastGenOutput>BlogModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="BlogModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BlogModel.edmx</DependentUpon>
-      <LastGenOutput>BlogModel.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="Datamodel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Datamodel.edmx</DependentUpon>
+      <LastGenOutput>Datamodel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Datamodel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Datamodel.edmx</DependentUpon>
+      <LastGenOutput>Datamodel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

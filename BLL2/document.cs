@@ -12,18 +12,18 @@ namespace BLL2
     using System;
     using System.Collections.Generic;
     
-    public partial class document
+    public partial class Document
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public document()
+        public Document()
         {
-            this.words = new HashSet<word>();
+            this.Terms = new HashSet<Term>();
         }
     
-        public int documentId { get; set; }
-        public string doc { get; set; }
+        public int DocumentId { get; set; }
+        public string Doc { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<word> words { get; set; }
+        public virtual ICollection<Term> Terms { get; set; }
     }
 }
